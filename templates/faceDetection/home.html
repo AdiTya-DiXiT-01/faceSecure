@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Home Page</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+
+    body {
+      font-family: "Lato", sans-serif;
+      color: #4a4a4a;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      font-size: x-large;
+    }
+
+    div {
+      padding: 10px;
+    }
+
+    h1 {
+      margin-top: 100px;
+    }
+
+    .btn {
+      outline: none;
+      border: none;
+      cursor: pointer;
+      display: inline-block;
+      margin: 0 auto;
+      padding: 0.9rem 2.5rem;
+      text-align: center;
+      background-color: #47ab11;
+      color: #fff;
+      border-radius: 4px;
+      box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+      font-size: 17px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Welcome!</h1>
+  <div>
+    <h2>
+      If you are not registered, then
+      <a href="{% url 'register' %}" class="btn">Register</a>
+    </h2>
+  </div>
+  <br>
+  <br>
+  <div>
+    <h2>Login Here <a href="{% url 'login' %}" class="btn">Login</a></h2>
+  </div>
+  <br>
+</body>
+
+</html>
